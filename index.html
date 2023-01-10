@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optical Web 🕶️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./media.css">
+</head>
+<body>
+    <main>
+    <!-- Navbar Section Start -->
+        <section>
+            <nav>
+                <div class="container main-nav flex">
+                    <a href="#" class="company-logo">
+                        <img src="./img/eyeLogo.png" alt="company logo">
+                    </a>
+                    <div class="nav-links" id="nav-links">
+                        <ul class="flex">
+                            <li><a href="#" class="hover-link">Home</a></li>
+                            <li><a href="#" class="hover-link">About</a></li>
+                            <li><a href="#" class="hover-link">Brands</a></li>
+                            <li><a href="#" class="hover-link primary-button">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+        </section>
+    <!-- Navbar Section End -->
+        <section class="banner"></section>
+        <section class="about"></section>
+        <section class="services"></section>
+        <section class="brands"></section>
+        <section class="appointment"></section>
+        <section class="contact"></section>
+        <section class="footer"></section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/7c78603360.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+
+    </script>
+</body>
+</html>
